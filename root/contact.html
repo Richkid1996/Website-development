@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+      <meta charset="UTF-8">
+
+      <title>Contact Us - Meal Point</title>
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+      
+      
+      <link href="css/style.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/31a7c650c7.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+      <header>
+          
+          <div class = "logo">
+              <a href="index.html">
+                  <img src="Images/logo.png" alt="Meal Point logo">
+                  <div>Meal Point</div>
+              </a>      
+          </div>
+          
+          <div class = "menu" >
+              <nav>
+                  <a href="plans.html">Select a Plan</a>
+                  <a href="contact.html">Contact Us</a>   
+              </nav>
+          </div>
+
+      </header>
+
+      <main>
+
+          <div class="container">
+          
+              <h1 class="title">Contact Us</h1>
+              
+              <div class="grid2">
+              
+                 <div>
+                  <h2>Live Phone Support</h2>
+                  <p>(888) 888-8888</p>
+                  <h2>Hours</h2>
+                  <p>Monday - Friday, 9am-6pm CT</p>
+                  <p>Saturday, 10am - 2pm CT</p>     
+                  
+                  <img class="contact" src="images/eggs.jpg" alt="Meal Point logo">
+                     
+                     
+                  </div>
+                  
+                  
+                 <div>
+                  
+                  <h2>Need some help?</h2>
+                  <p>Submit a message and one of our amazing Meal Point Chefs will cook up a response and get back to you soon.</p>
+                  <p>Always feel free to reach out with any comments, questions, and suggestions!</p>     
+                  
+                     
+                  <form action="form.php" method="get" id="contact-form">
+                      
+                      <label for="name">Name</label>
+                      <input placeholder="Name" type="text" id="name" name="name">
+                      
+                      <label for="email">Email</label>
+                      <input placeholder="Email" type="email" id="email" name="email">
+                      
+                      <label for="help">I need help with</label>
+                      <select name="help" id="help" form="contact-form">
+                         <option value="" disabled selected>I need help with...</option>
+                         <option value="my-account">My Account</option>
+                         <option value="my-order">My Order</option>
+                         <option value="shipping">Shipping</option>
+                         <option value="something-else">Something Else</option>
+                      </select>
+                      
+                      <label for="message">Message</label>
+                     <textarea placeholder="Message" id="message" name="message"></textarea>
+                      
+                      
+                    <button type="submit" form="contact-form" value="Submit">Submit</button>
+                      
+                    </form>
+                     
+                     
+                     
+                  </div>       
+              
+              </div>
+          
+          </div>         
+                               
+               
+               <div class="callout">
+                    <h3>Get started on your wellness goals<span class="bold"> with three weeks free!</span></h3>
+                    <a href="plans.html" class="btn">Explore Plans</a>
+               
+               </div>
+               
+
+      </main>
+
+      <footer>
+          
+          <img src="Images/logo-Footer2.png" alt="Meal Point logo">
+          <p>&copy;Copyright 2024. Meal Point, Inc. All Rights Reserved.</p>
+
+      </footer>
+
+  </body>
+
+</html>
