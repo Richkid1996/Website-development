@@ -24,3 +24,8 @@ body {
     text-decoration: none;
     color: #333;
 }
+
+/*****Hero Section ********/
+.hero {
+    background: url('../Images/hero-bg.jpg') no-repeat center center/cover;
+}
