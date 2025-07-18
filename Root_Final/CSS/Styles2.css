@@ -136,6 +136,26 @@ header a, header div {
     height: 620px;
 }
 
+.hero-content {
+  background-color: #ffffff80;
+  padding: 30px;
+  max-width: 480px;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.6em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 200;
+  color: white;
+  line-height: 1.4em;
+}
+
 .hero div {
     max-width: 500px;
     top: 25%;
@@ -159,18 +179,22 @@ header a, header div {
 /**************************************************** BENEFITS */
 
 .benefits {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    height: 200px;
     background-color: #edefc0;
-    padding: 30px 0px;
+    padding: 40px 20px;
 }
 
-.benefits div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.benefits-box-white {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.benefits-text-box {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
 }
 
 .benefits div h2 {
