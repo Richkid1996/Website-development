@@ -9,142 +9,446 @@ h1, h2, h3, h4, h5, li, div {
     padding: 0;
 }
 
-body {
+h1 {
+    font-size: 40px;    
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
     font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     margin: 0;
-    padding: 0;
-    color: #333;
 }
 
-/*******Header*********/
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+i {
+    padding-right: 16px;
+    color: #296002;
+    font-weight: bold;
 }
 
-.nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+.bold {
+    font-weight: 500;
 }
 
-.nav a {
+.btn, button {
+    padding: 12px 30px 10px 30px;
+    font-weight: 400;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 1.6em;
+    border: 0;
+    top: 30px;
+    position: relative;
+    background-color: #296002;
+    color: #ffffff;
     text-decoration: none;
-    color: #333;
 }
 
-/*****Hero Section ********/
-.hero {
-    background: url('../Images/bkgd-hero.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn:hover, button:hover {
+    background-color: #669900;
 }
 
-.hero-content {
-    background-color: #FFFFFF80;
-    padding: 20px;
+.hero .btn {
+    background-color: #e36c04;
+}
+
+.hero .btn:hover {
+    background-color: #ff9933;
+}
+
+main {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.container {
     text-align: center;
 }
 
-.hero p {
-    font-size: 1rem;
+h1.title {
+    display: inline-block;
+    background-color: #edefc0;
+    padding: 100px 0;
+    width: 100%;
 }
 
-/******Benifits*******/
+img.contact {
+    width: 100%;
+    padding-top: 30px;
+}
+/********************************************************Header */
+
+header{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    max-width: 1100px;
+    height: 90px;
+}
+
+.logo img {
+    float:left;
+    width: 70px;
+    padding-right: 10px;
+}
+
+.logo div {
+    margin-top: 30px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: #000000;
+}
+
+header a, header div {
+    text-decoration: none;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+}
+
+.menu nav {
+    float: right;
+    margin-top: 35px;
+    text-transform: uppercase;   
+}
+
+.menu nav a {
+    font-size: 25px;
+    margin-left: 20px;
+    color: #000000;
+}
+
+.menu nav a:hover {
+    color: #e36c04; 
+}
+
+
+/*************************************** HERO */
+
+.hero {
+    background: url(../Images/bkgd-hero.jpg) no-repeat center;
+    height: 620px;
+}
+
+.hero-content {
+  background-color: #ffffff80;
+  padding: 30px;
+  max-width: 480px;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.6em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 200;
+  color: white;
+  line-height: 1.4em;
+}
+
+.hero div {
+    max-width: 500px;
+    top: 25%;
+    left: 10%;
+    position: relative;
+}
+
+.hero div h1 {
+    font-size: 5.5em;
+    font-weight: 300;
+    color: white;
+}
+
+.hero div p {
+    font-size: 2em;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+/**************************************************** BENEFITS */
+
 .benefits {
-    padding: 60px 20px;
+    background-color: #edefc0;
+    padding: 40px 20px;
 }
 
 .benefits-box-white {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .benefits-text-box {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.benefits div h2 {
+    font-size: 3em;
+}
+
+.benefits div ul {
+   font-size: 1.4em;
+   margin-left: -190px;
+   list-style-type: none;
+}
+
+.benefits div ul li {
+    line-height: 1.4em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+/**************************************************** Smiles */
+.smiles {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.border {
+  border: 2px solid #ccc;
+  padding: 20px;
+}
+
+.grid2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.grid2 a {
+  color: #e36c04;
+  text-decoration: none;
+}
+
+.grid2 a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/**************************************************** CALL To Action */
+.cta {
+  background: url("../Images/bkgd-cta.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffffcc;
+}
+
+.cta h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cta form {
+  display: flex;
+  gap: 10px;
+}
+
+.cta input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-family: Open Sans, sans-serif;
+}
+
+.cta button {
+  padding: 10px 20px;
+  background-color: #e36c04;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.cta button:hover {
+  background-color: #ff9933;
+}
+
+
+
+/**************************************************** FOOTER **/
+
+footer {
+    background-color: #f0f0f0;
     padding: 20px;
     text-align: left;
 }
 
-/****** Smiles Guaranteed *****/
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 40px;
-}
-
-.border {
-    border: 2px solid #ccc;
-    padding: 20px;
-}
-
-/****CTA****/
-.cta {
-    background: url('../Images/bkgd-cta.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-}
-
-.cta-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    background-color: #ffffffcc;
-}
-
-.cta form {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.cta input {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.cta button {
-    padding: 10px 20px;
-    background-color: #FF5733;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/*** Footer***/
-footer {
-    background-color: #F0F0F0;
-    padding: 20px;
-    text-align: center;
-}
-
 .footer-container {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-/***** Responsive*****/
-@media (max-width: 768px) {
-    .grid2 {
-        grid-template-columns: 1fr;
+.footer-container img {
+    float: left;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.footer-container p {
+  line-height: 50px;
+  font-size: 14px;
+}
+
+/**************************************************** MEDIA QUERIES **/
+/* For mobile phones (portiait and landscape views)*/
+/*Header*/
+@media screen and (max-width: 500px) {
+
+header {
+   padding: 0 20px;
+}
+
+.menu nav {
+    text-align: right;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.logo img {
+    width: 50px;
+    margin-top: 13px;
+}
+
+.menu nav a {
+    display: block;
+    font-size: 20px;
+}
+
+.menu nav a:nth-child(1) {
+    border: 0;
+    padding: 0 0 6px 0;
+}
+
+h1.title {
+    padding: 30px 0;
+}
+/*Hero Section*/
+.hero {
+    background: url("../images/bkgd-hero.jpg")no-repeat left;
+    background-size: 130%;
+    height: 240px;
+}
+
+.hero div {
+   top: 25px;
+   left: 20px;
+   width: 60%; 
+}
+
+.hero div h1 {
+    font-size: 2.2em;
+    font-weight: 300;
+    color: white;
+}
+
+.hero div p {
+    font-size: 1em;
+    padding-top: 8px;
+}
+/* Benifits Section*/
+
+.benefits,.grid4,.grid3,.grid2 {
+    grid-template-columns: 100%;
+} 
+
+.benefits div h2 {
+    font-size: 2.4em;
+}
+
+.benefits div ul {
+    font-size: 1em;
+    margin-left: -40px;
+}
+
+.grid4 div {
+    padding: 0 20px;
+}
+
+.steps div {
+    padding: 10px;
+    border-radius: 100px;
+}
+    
+}
+
+/*For portrait and landscape tables */
+@media screen and (min-width:600px) and (max-width: 1024px) {
+
+    header {
+        padding: 0 20px;
     }
 
-    .hero h1 {
-        font-size: 1.5rem;
+    .hero div {
+        top: 30px;
+        left: 30px;
+        width: 60%;
     }
 
-    .hero p {
-        font-size: 0.9rem;
+    .hero {
+        background: url("../images/bkgd-hero.jpg") no-repeat left;
+        background-size: 130%;
+        height: 400px;
     }
+
+    .benefits div h2 {
+        font-size: 2.4em;
+    }
+
+    .benefits div ul {
+        font-size: 1.1em;
+        margin-left: -50px;
+    }
+
+    .grid4 {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        grid-gap: 60px;
+        padding: 30px 60px;
+    }
+
+    form {
+        padding-right: 40px;
+    }
+
+    .grid2 div p {
+        font-size: 15px;
+    }
+
+    h1.title {
+        padding: 50px 0;
+    }
+    
 }
