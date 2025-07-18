@@ -1,5 +1,16 @@
+html {
+    background-color: #fef9f5;
+}
+
+h1, h2, h3, h4, h5, li, div {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -73,4 +84,67 @@ body {
 .border {
     border: 2px solid #ccc;
     padding: 20px;
+}
+
+/****CTA****/
+.cta {
+    background: url('../Images/bkgd-cta.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffffcc;
+}
+
+.cta form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cta input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*** Footer***/
+footer {
+    background-color: #F0F0F0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/***** Responsive*****/
+@media (max-width: 768px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
 }
