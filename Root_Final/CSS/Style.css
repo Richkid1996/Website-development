@@ -139,24 +139,29 @@ header a, header div {
 .hero-content {
   background-color: #ffffff80;
   padding: 30px;
-  max-width: 480px;
+  max-width: 500px;
+  top: 20%;
+  left: 10%;
+  position: relative;
+  border-radius: 5px;
 }
 
 .hero h1 {
   font-size: 3.5em;
   font-weight: 300;
-  color: white;
+  color: #000;
 }
 
 .hero p {
   font-size: 1.6em;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: 200;
-  color: white;
+  color: #000;
   line-height: 1.4em;
 }
 
 .hero div {
+    background-color: #ffffff80;
     max-width: 500px;
     top: 25%;
     left: 10%;
@@ -164,87 +169,103 @@ header a, header div {
 }
 
 .hero div h1 {
-    font-size: 5.5em;
-    font-weight: 300;
-    color: white;
+    font-size: 3.5em;
+    color: #000;
 }
 
 .hero div p {
-    font-size: 2em;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    font-weight: 200;
-    color: white;
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: #000;
 }
 
+.hero span.bold {
+    display: block;
+}
 /**************************************************** BENEFITS */
 
 .benefits {
+    display: flex;
     background-color: #edefc0;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.benefits-box-white {
-  background-color: white;
-  padding: 30px;
-  text-align: center;
-  margin-bottom: 20px;
+.benefits-left {
+    flex: 1 1 100%;
+    text-align: center;
 }
 
-.benefits-text-box {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
+.benefits-right {
+    flex: 1 1 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.benefits div h2 {
-    font-size: 3em;
-}
-
-.benefits div ul {
-   font-size: 1.4em;
-   margin-left: -190px;
-   list-style-type: none;
-}
-
-.benefits div ul li {
-    line-height: 1.4em;
+.benefits-right ul {
+    list-style-type: none;
     font-size: 1.3em;
-    font-weight: 300;
+    line-height: 1.6em;
+    padding-left: 0;
 }
 
 /**************************************************** Smiles */
 .smiles {
-  padding: 40px 20px;
-  background-color: #fff;
+  padding: 40px 0;
+  background-color: #336600;
+  color: white;
+  border-bottom: 30px solid white;
 }
 
-.grid2 {
+.smiles-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 10px 1fr;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  column-gap: 30px; /* optional: improves spacing */
+}
+
+/* Divider line between columns */
+.divider {
+  height: 60px;
+  width: 1px;
+  background-color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+/* Left column: heading with icon */
+.smiles-heading h2 {
+  font-size: 2.2em;
+  display: flex;
   align-items: center;
 }
 
-.border {
-  border: 2px solid #ccc;
-  padding: 20px;
+.smiles-heading i {
+  color: #336600;
+  font-size: 2em;
+  margin-right: 12px;
+  text-shadow: 
+    -2px -2px 0 #fff,
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff;
 }
 
-.grid2 p {
-  font-size: 16px;
-  line-height: 1.5;
+/* Right column: paragraph and link */
+.smiles-text p {
+  font-size: 1.2em;
+  color: white;
 }
 
-.grid2 a {
-  color: #e36c04;
-  text-decoration: none;
-}
-
-.grid2 a:hover {
+.smiles-text a {
+  color: #fff;
   text-decoration: underline;
+  font-size: 1em;
 }
-
 
 
 
@@ -354,35 +375,15 @@ footer {
         padding: 20px;
     }
 
-    .hero-content {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .hero-content {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .hero-content p {
-        font-size: 1em;
-    }
+    
+    
 
     .benefits {
         display: block;
         padding: 30px 20px;
     }
 
-    .benefits-box-white h2 {
-        font-size: 1.4em;
-        text-align: center;
-    }
-
-    .benefits-text-box {
-        width: 100%;
-        padding: 10px;
-        text-align: left;
-    }
+    
 
     .grid2 {
         display: block;
@@ -393,16 +394,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .cta {
-        padding: 40px 10px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .cta-inner {
-        padding: 20px;
-    }
-
+   
     .cta {
         padding: 40px 10px;
         background-position: center;
