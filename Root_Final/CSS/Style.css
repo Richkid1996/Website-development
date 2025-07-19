@@ -336,6 +336,159 @@ footer {
     }
 
     .menu nav {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .menu nav a {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .hero {
+        background-position: center;
+        background-size: 150%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .hero-content {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .benefits {
+        display: block;
+        padding: 30px 20px;
+    }
+
+    .benefits-box-white h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .benefits-text-box {
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .grid2 {
+        display: block;
+        padding: 20px;
+    }
+
+    .border {
+        margin-bottom: 20px;
+    }
+
+    .cta {
+        padding: 40px 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cta-inner {
+        padding: 20px;
+    }
+
+    .cta {
+        padding: 40px 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cta-inner {
+        padding: 20px;
+    }
+
+    .cta h3 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .cta form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta input,
+    .cta button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+}
+
+/**********Tablets( min-width: 600px) amd (max-width: 1024px)*********/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .menu nav a {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .hero {
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cta {
+        padding: 60px 30px;
+    }
+
+    .cta-inner {
+        padding: 30px;
+    }
+
+    .cta h3 {
+        font-size: 1.6em;
+    }
+
+    footer {
+        padding: 30px;
     }
 }
