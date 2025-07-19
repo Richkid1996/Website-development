@@ -2,6 +2,11 @@ html {
     background-color: #fef9f5;
 }
 
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, li, div {
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-weight: 400;
@@ -132,27 +137,34 @@ header a, header div {
 /*************************************** HERO */
 
 .hero {
-    background: url(../Images/bkgd-hero.jpg) no-repeat center;
+    background: url(../Images/bkgd-hero.jpg) no-repeat center center/cover;
+    
     height: 620px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-content {
   background-color: #ffffff80;
-  padding: 30px;
+  padding: 75px;
   max-width: 500px;
-  top: 20%;
-  left: 10%;
-  position: relative;
-  border-radius: 5px;
+  top: 25%;
+  left: 5%;
+  bottom: 5%;
+  position: relative; 
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 3.5em;
   font-weight: 300;
   color: #000;
 }
 
-.hero p {
+.hero-content p {
   font-size: 1.6em;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: 200;
@@ -160,26 +172,9 @@ header a, header div {
   line-height: 1.4em;
 }
 
-.hero div {
-    background-color: #ffffff80;
-    max-width: 500px;
-    top: 25%;
-    left: 10%;
-    position: relative;
-}
 
-.hero div h1 {
-    font-size: 3.5em;
-    color: #000;
-}
 
-.hero div p {
-    font-size: 1.4em;
-    margin-top: 10px;
-    color: #000;
-}
-
-.hero span.bold {
+.hero-content span.bold {
     display: block;
 }
 /**************************************************** BENEFITS */
@@ -323,14 +318,19 @@ header a, header div {
 /**************************************************** FOOTER **/
 
 footer {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #336600;
+    border-top: 3px solid white;
+    padding: 20px 0;
     text-align: left;
 }
 
 .footer-container {
   max-width: 960px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
 }
 
 .footer-container img {
