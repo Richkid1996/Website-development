@@ -182,9 +182,19 @@ header a, header div {
 .benefits {
     display: flex;
     background-color: #edefc0;
-    padding: 50px 20px;
+    padding: 30px 20px 60px;
     gap: 40px;
     flex-wrap: wrap;
+}
+
+.benefits-heading-box {
+    background-color: #fef9f5;
+    padding: 40px 0 10px ;
+    max-width: 6500px;
+    
+    
+    
+    
 }
 
 .benefits-left {
@@ -199,33 +209,43 @@ header a, header div {
 }
 
 .benefits-right ul {
-    list-style-type: none;
-    font-size: 1.3em;
-    line-height: 1.6em;
-    padding-left: 0;
+    list-style: none;
+  padding: 0;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  text-align: left;
+  max-width: 400px;
+  margin:-20px auto 0 130px;
+}
+
+.benefits-right ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 /**************************************************** Smiles */
 .smiles {
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #336600;
   color: white;
-  border-bottom: 30px solid white;
+  border-bottom: 40px solid white;
 }
 
-.smiles-grid {
+.smiles-grid2 {
   display: grid;
-  grid-template-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1px 1fr;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
-  column-gap: 30px; /* optional: improves spacing */
+  
 }
 
 /* Divider line between columns */
 .divider {
-  height: 60px;
+  height: 90px;
   width: 1px;
   background-color: white;
   justify-self: center;
@@ -234,9 +254,10 @@ header a, header div {
 
 /* Left column: heading with icon */
 .smiles-heading h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   display: flex;
   align-items: center;
+  margin: 10px auto;
 }
 
 .smiles-heading i {
@@ -254,12 +275,24 @@ header a, header div {
 .smiles-text p {
   font-size: 1.2em;
   color: white;
+  text-align: left;
+  margin: 1em;
+  padding: 0;
+  
 }
 
 .smiles-text a {
   color: #fff;
   text-decoration: underline;
   font-size: 1em;
+  text-align: start;
+}
+
+.smiles-text .aligned-link {
+    display: inline-block;
+    margin-left: 1;
+    text-align: left;
+    
 }
 
 
@@ -279,7 +312,7 @@ header a, header div {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background-color: #ffffffcc;
+  background-color: white;
 }
 
 .cta h3 {
@@ -319,7 +352,7 @@ header a, header div {
 
 footer {
     background-color: #336600;
-    border-top: 3px solid white;
+    border-top: 40px solid white;
     padding: 20px 0;
     text-align: left;
 }
