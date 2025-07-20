@@ -233,6 +233,10 @@ header a, header div {
   border-bottom: 40px solid white;
 }
 
+.smiles-heading {
+    padding-right: 20px;
+}
+
 .smiles-grid2 {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
@@ -257,7 +261,8 @@ header a, header div {
   font-size: 2em;
   display: flex;
   align-items: center;
-  margin: 10px auto;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
 
 .smiles-heading i {
@@ -313,16 +318,21 @@ header a, header div {
   align-items: center;
   padding: 40px;
   background-color: white;
+  width: 400px;
 }
 
 .cta h3 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .cta form {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  width: 50%;
+  gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .cta input {
@@ -333,7 +343,7 @@ header a, header div {
 }
 
 .cta button {
-  padding: 10px 20px;
+  padding: 10px ;
   background-color: #e36c04;
   color: white;
   border: none;
@@ -346,6 +356,11 @@ header a, header div {
   background-color: #ff9933;
 }
 
+.cta input,
+.cta button {
+    
+    margin: 0;
+}
 
 
 /**************************************************** FOOTER **/
