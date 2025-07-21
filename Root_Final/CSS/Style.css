@@ -181,48 +181,58 @@ header a, header div {
 
 .benefits {
     display: flex;
-    background-color: #edefc0;
-    padding: 30px 20px 60px;
-    gap: 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:transparent;
+    padding: 0;
+    gap: 0;
+    
 }
 
 .benefits-heading-box {
     background-color: #fef9f5;
-    padding: 40px 0 10px ;
+    padding-bottom: 2px;
     max-width: 6500px;
-    
-    
-    
-    
 }
 
 .benefits-left {
+    padding: 40px 20px 10px;
     flex: 1 1 100%;
     text-align: center;
 }
 
 .benefits-right {
     flex: 1 1 100%;
-    max-width: 600px;
+    max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    background-color: #edefc0;
+    padding: 20px 0;
+   
+}
+
+.list-wrapper {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 30px;
+  transform: translateX(20px);
 }
 
 .benefits-right ul {
     list-style: none;
   padding: 0;
-  font-size: 1.3em;
+  
+  font-size: 1.7em;
   line-height: 1.6em;
   text-align: left;
-  max-width: 400px;
-  margin:-20px auto 0 130px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .benefits-right ul li {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
+  
+  gap: 15px;
 }
 
 /**************************************************** Smiles */
@@ -284,6 +294,7 @@ header a, header div {
   margin: 1em;
   padding: 0;
   
+  
 }
 
 .smiles-text a {
@@ -295,7 +306,7 @@ header a, header div {
 
 .smiles-text .aligned-link {
     display: inline-block;
-    margin-left: 1;
+    margin-left: 1px;
     text-align: left;
     
 }
@@ -330,19 +341,28 @@ header a, header div {
 .cta form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 50%;
-  gap: 0;
+  gap: 2px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 35px;
+  padding-top: 0;
 }
 
 .cta input {
+    width: 200px;
   padding: 10px;
   border: 1px solid #f0f0f0;
   font-size: 1em;
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #f0f0f0;
   margin-bottom: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.cta input::placeholder {
+    color: #000;
 }
 
 .cta button {
@@ -351,18 +371,23 @@ header a, header div {
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-top: 0;
+  width: 200px;
+  padding: 10px;
+  margin: 0;
+  
 }
 
 .cta button:hover {
   background-color: #ff9933;
+  
 }
 
 .cta input,
 .cta button {
-    
-    margin: 0;
+  margin: -10px;
 }
 
 
@@ -401,88 +426,66 @@ footer {
 /* For mobile phones (portiait and landscape views)*/
 /*Header*/
 @media screen and (max-width: 500px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 20px;
-        height: auto;
+    .hero-content {
+        padding: 40px 20px;
+        max-width: 100%;
+        top: 20%;
     }
 
-    .menu nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+    .hero-content h1 {
+        font-size: 2em;
     }
 
-    .menu nav a {
-        margin: 5px 0;
-        font-size: 18px;
+    .hero-content p {
+        font-size: 1.2em;
     }
 
-    .hero {
-        background-position: center;
-        background-size: 150%;
-        height: 300px;
-        padding: 20px;
-    }
-
-    
-    
-
-    .benefits {
-        display: block;
-        padding: 30px 20px;
-    }
-
-    
-
-    .grid2 {
-        display: block;
-        padding: 20px;
-    }
-
-    .border {
-        margin-bottom: 20px;
-    }
-
-   
-    .cta {
-        padding: 40px 10px;
-        background-position: center;
-        background-size: cover;
+    .benefits-right ul {
+        font-size: 1.4em;
     }
 
     .cta-inner {
-        padding: 20px;
-    }
-
-    .cta h3 {
-        font-size: 1.2em;
-        text-align: center;
+        width: 100%;
+        padding: 30px 20px;
     }
 
     .cta form {
-        flex-direction: column;
         width: 100%;
     }
 
     .cta input,
     .cta button {
-        width: 100%;
+        font-size: 1.1em;
     }
 
-    footer {
-        padding: 20px;
+    .smiles-grid2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
     }
 
-    footer img {
-        float: none;
-        display: block;
-        margin: 0 auto 10px;
+    .divider {
+        display: none;
     }
 
+    .smiles-heading h2 {
+        justify-content: center;
+        font-size: 1.6em;
+    }
+
+    .smiles-text p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .footer-container p {
+        font-size: 12px;
+    }
 }
 
 /**********Tablets( min-width: 600px) amd (max-width: 1024px)*********/
@@ -536,4 +539,65 @@ footer {
     footer {
         padding: 30px;
     }
+
+    /********** Large Screens (min-width: 1200px) **********/
+@media screen and (min-width: 1200px) {
+    .hero {
+        height: 620px;
+        background-size: cover;
+    }
+
+    .hero-content {
+        padding: 100px 80px;
+        top: 30%;
+        left: 8%;
+        max-width: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.8em;
+    }
+
+    .hero-content p {
+        font-size: 2em;
+    }
+
+    .benefits {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 80px;
+    }
+
+    .benefits-left {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .benefits-right ul {
+        font-size: 2em;
+    }
+
+    .smiles-grid2 {
+        grid-template-columns: 1fr 1px 1fr;
+        padding: 0 60px;
+    }
+
+    .cta-inner {
+        width: 450px;
+        padding: 60px;
+    }
+
+    .cta h3 {
+        font-size: 2.2em;
+    }
+
+    footer .footer-container p {
+        font-size: 16px;
+    }
+
+    footer .footer-container img {
+        width: 60px;
+    }
+}
 }
