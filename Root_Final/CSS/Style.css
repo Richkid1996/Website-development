@@ -324,6 +324,7 @@ header a, header div {
 .cta h3 {
   font-size: 2em;
   margin-bottom: 10px;
+  
 }
 
 .cta form {
@@ -337,13 +338,15 @@ header a, header div {
 
 .cta input {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f0f0f0;
   font-size: 1em;
   font-family: Open Sans, sans-serif;
+  background-color: #f0f0f0;
+  margin-bottom: 0;
 }
 
 .cta button {
-  padding: 10px ;
+  padding: 5px 10px 10px 10px ;
   background-color: #e36c04;
   color: white;
   border: none;
@@ -369,7 +372,7 @@ footer {
     background-color: #336600;
     border-top: 40px solid white;
     padding: 20px 0;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-container {
@@ -377,6 +380,7 @@ footer {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   color: white;
 }
@@ -384,7 +388,8 @@ footer {
 .footer-container img {
     float: left;
     width: 50px;
-    margin-right: 20px;
+    margin: 0;
+    filter: brightness(0) invert(1);
 }
 
 .footer-container p {
